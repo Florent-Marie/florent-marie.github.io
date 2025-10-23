@@ -1,13 +1,15 @@
-/* style-taverne.css - La Taverne de Maître Frelon */
+/* taverne.css - La Taverne de Maître Frelon */
 
+/* --- Variables --- */
 :root {
-  --bg: #3b2f21;       /* bois sombre */
-  --card: #4b3828;     /* cartes / sections */
-  --muted: #c7b299;    /* texte secondaire */
-  --accent: #d4a15f;   /* doré / accents */
+  --bg: #3b2f21;        /* brun bois chaud */
+  --card: rgba(75,56,40,0.85); /* sections légèrement plus foncées */
+  --muted: #c7b299;     /* texte secondaire */
+  --accent: #d4a15f;    /* doré / accents */
   --max-width: 1100px;
 }
 
+/* --- Reset / Base --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +19,11 @@
 html, body {
   height: 100%;
   font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url('images/wood-texture.jpg'); /* optionnel : texture bois */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #f5f0e6;
 }
 
@@ -27,13 +33,12 @@ html, body {
   padding: 2rem;
 }
 
-/* Header spécifique */
-
+/* --- Header --- */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: linear-gradient(180deg, rgba(27,20,15,0.95), rgba(27,20,15,0.85));
+  background: linear-gradient(180deg, rgba(59,47,33,0.95), rgba(59,47,33,0.85));
   border-bottom: 1px solid rgba(255,255,255,0.05);
   backdrop-filter: blur(6px);
 }
@@ -86,47 +91,110 @@ html, body {
   font-size: 1.2rem;
 }
 
-/* Taverne hero / introduction */
-
-.hero {
+/* --- Hero section --- */
+.tav-hero {
   padding: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
 }
 
-.title {
+.tav-hero-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.tav-intro h1 {
+  font-family: 'MedievalSharp', cursive;
   font-size: 2.2rem;
   color: var(--accent);
-  text-shadow: 1px 1px 4px #000;
+  margin-bottom: 1rem;
 }
 
-.lead {
+.tav-intro p {
   color: var(--muted);
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
-/* Vidéos et galerie */
+.tav-note {
+  font-style: italic;
+  color: #e9e0c0;
+}
 
-.video-wrap, .gallery {
-  margin-top: 2rem;
-  max-width: 560px;
-  width: 100%;
+.tav-art img {
+  max-width: 300px;
   border-radius: 10px;
-  overflow: hidden;
+  border: 2px solid var(--accent);
 }
 
-.video-wrap iframe {
+/* --- Vidéos --- */
+.tav-gallery {
+  margin-top: 3rem;
+}
+
+.tav-gallery h2 {
+  font-family: 'MedievalSharp', cursive;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.grid-videos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vid {
+  background-color: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.vid iframe {
   width: 100%;
-  height: 315px;
+  height: 170px;
   border: 0;
+  border-radius: 6px;
 }
 
-/* Footer */
+.caption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
 
+/* --- Galerie images --- */
+.tav-archive {
+  margin-top: 3rem;
+}
+
+.tav-archive h2 {
+  font-family: 'MedievalSharp', cursive;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.images-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images-grid img {
+  max-width: 200px;
+  border-radius: 8px;
+  border: 2px solid var(--accent);
+}
+
+/* --- Footer --- */
 .site-footer {
   border-top: 1px solid rgba(255,255,255,0.05);
   padding: 1rem 0;
@@ -135,15 +203,18 @@ html, body {
   text-align: center;
 }
 
-/* Responsive */
-
+/* --- Responsive --- */
 @media (max-width: 900px) {
-  .hero {
-    padding: 2rem 1rem;
+  .tav-hero-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
   .nav-toggle {
     display: block;
   }
+
   .main-nav {
     position: absolute;
     right: 1rem;
@@ -154,8 +225,8 @@ html, body {
     display: none;
     flex-direction: column;
   }
+
   .main-nav.show {
     display: flex;
   }
 }
-
