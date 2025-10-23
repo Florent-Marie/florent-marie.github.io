@@ -1,24 +1,22 @@
-/* FILE: scripts.js */
-// Minimal JS for nav toggle and dynamic years
 document.addEventListener('DOMContentLoaded', function(){
   var navToggle = document.getElementById('nav-toggle');
   var mainNav = document.getElementById('main-nav');
-  if(navToggle){
+  if(navToggle && mainNav){
     navToggle.addEventListener('click', function(){
       mainNav.classList.toggle('show');
     });
   }
+
   var y = new Date().getFullYear();
-  var years = ['year','year2','year3','year4'];
-  years.forEach(function(id){
+  ['year','year2','year3','year4'].forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.textContent = y;
   });
 
   // highlight current nav link (basic)
-  var links = document.querySelectorAll('.main-nav .nav-link');
+  var links = document.querySelectorAll('#main-nav .nav-link');
   links.forEach(function(a){
-    if(a.href === location.href || (a.getAttribute('href') !== '/' && location.href.endsWith(a.getAttribute('href')))){
+    if(new URL(a.href, location.origin).pathname === location.pathname){
       a.classList.add('active');
     }
   });
