@@ -1,7 +1,7 @@
 /* style.css - version minimaliste et propre */
 
 :root {
-  --bg: linear-gradient(to bottom right, #5E5E5E, #262626);
+  --bg: linear-gradient(to bottom right, #5E5E5E, #1A1A1A);
   --card: #141416;
   --muted: #9aa0a6;
   --accent: #c59a3b;
@@ -183,4 +183,5 @@ html, body {
     display: flex;
   }
 }
+
 
