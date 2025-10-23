@@ -1,8 +1,8 @@
 /* style-taverne.css - La Taverne de Maître Frelon */
 
 :root {
-  --bg: #1b140f;       /* bois sombre */
-  --card: #2b1f16;     /* cartes / sections */
+  --bg: #3b2f21;       /* bois sombre */
+  --card: #4b3828;     /* cartes / sections */
   --muted: #c7b299;    /* texte secondaire */
   --accent: #d4a15f;   /* doré / accents */
   --max-width: 1100px;
@@ -158,3 +158,4 @@ html, body {
     display: flex;
   }
 }
+
