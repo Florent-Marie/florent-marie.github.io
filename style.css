@@ -14,11 +14,19 @@ body {
   font-family: 'Montserrat', system-ui, sans-serif;
   color: #e9e9e9;
   height: 100%;
-  background: linear-gradient(to bottom right, rgba(94,94,94,0.6), rgba(26,26,26,0.6)), url('/images/fond.jpg');
+  background:
+    linear-gradient(to bottom right, rgba(94,94,94,0.6), rgba(26,26,26,0.6)),
+    url('/images/fond.jpg'),
+    var(--bg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
 }
 .container { max-width: var(--max-width); margin: 0 auto; padding: 2rem; }
 
@@ -113,7 +121,6 @@ body {
 .grid-2 {
   display: block;
   margin-top: 2rem;
-  gap: 0;
 }
 .about-text h3 {
   margin-top: 2rem; /* plus d'espace avant chaque titre */
@@ -124,7 +131,7 @@ body {
 .about-text, .about-videos {
   width: 100%;     /* force la largeur complète */
   margin-bottom: 2rem;
-  gap:o;
+  gap:0;
 }
 
 /* Video grid */
@@ -164,5 +171,6 @@ body {
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
