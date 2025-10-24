@@ -34,10 +34,10 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   gap: 2rem;
 }
 .hero-text {
-  flex: 1 1 25%;
+  flex: 1 1 40%;
   max-width: 600px; /* ou plus si besoin */
 }
-.hero-media { flex: 1 1 75%; display: flex; justify-content: center; }
+.hero-media { flex: 1 1 60%; display: flex; justify-content: center; }
 .hero-buttons {
   margin-top: 1.5rem;
   display: flex;
@@ -45,7 +45,17 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   gap: 1rem;
   align-items: center;
 }
-.btn { display: inline-block; padding: 0.6rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; }
+.btn {
+  display: flex;              /* flex pour centrer le texte */
+  align-items: center;        /* centre verticalement */
+  justify-content: center;    /* centre horizontalement */
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
 .btn.primary { background: var(--accent); color: #0b0b0b; }
 .btn.secondary { background: rgba(255,255,255,0.1); color: #fff; }
 .btn:hover { transform: scale(1.05); }
@@ -97,6 +107,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
