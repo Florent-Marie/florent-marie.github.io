@@ -42,7 +42,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
-  flex-wrap: nowrap; /* empêche les boutons de passer en colonne */
+  flex-wrap: wrap; /* les boutons passent en colonne (sinon : nowrap)*/
   justify-content: center; /* centre les boutons horizontalement */
 }
 .btn { display: inline-block; padding: 0.6rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; }
@@ -83,4 +83,5 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
