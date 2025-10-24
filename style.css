@@ -46,13 +46,17 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   flex: 1 1 50%;
   max-width: 600px; /* ou plus si besoin */
 }
-.hero-media { flex: 1 1 50%; display: flex; justify-content: center; }
+.hero-media {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+}
 .hero-buttons {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: stretch;
+  align-items: center;
 }
 .btn {
   display: flex;              /* flex pour centrer le texte */
@@ -124,6 +128,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
