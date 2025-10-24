@@ -43,7 +43,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: center;
+  align-items: stretch;
 }
 .btn {
   display: flex;              /* flex pour centrer le texte */
@@ -59,6 +59,12 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
 .btn.primary { background: var(--accent); color: #0b0b0b; }
 .btn.secondary { background: rgba(255,255,255,0.1); color: #fff; }
 .btn:hover { transform: scale(1.05); }
+
+.hero-buttons .btn {
+  display: flex;              /* pour centrer le texte */
+  align-items: center;
+  justify-content: center;
+}
 
 /* Video wrap responsive */
 .video-wrap {
@@ -107,6 +113,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
