@@ -25,6 +25,15 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
 .nav-link.active { color: #fff; border-bottom: 2px solid var(--accent); }
 .nav-toggle { display: none; background: none; border: 0; color: #fff; font-size: 1.2rem; }
 
+.title {
+  font-size: 3rem;        /* un peu plus gros */
+  font-weight: 700;       /* bien gras */
+  text-align: center;     /* centre le texte */
+  margin-bottom: 1rem;    /* espace sous le titre */
+  max-width: 600px;
+  margin: 0 auto 1rem auto; /* centre horizontalement et ajoute espace en bas */
+}
+
 /* Hero */
 .hero-inner { 
   display: flex;
@@ -115,6 +124,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
