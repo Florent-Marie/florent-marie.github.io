@@ -99,17 +99,21 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
 }
 
 /* About section */
-.grid-2 { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; }
+.grid-2 {
+  display: block;
+  margin-top: 2rem;
+  gap: 0;
+}
 .about-text h3 {
   margin-top: 2rem; /* plus d'espace avant chaque titre */
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
+/* About-text prend toute la largeur */
 .about-text, .about-videos {
-  flex: 1;
-  min-width: 280px;
-  margin-bottom: 1rem; /* espace entre les paragraphes */
-  line-height: 1.7;
+  width: 100%;     /* force la largeur complète */
+  margin-bottom: 2rem;
+  gap:o;
 }
 
 /* Video grid */
@@ -149,6 +153,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
