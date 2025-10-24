@@ -150,6 +150,28 @@ p {
 }
 
 /* Featured */
+.featured {
+  text-align: center;
+  margin-top: 4rem;
+}
+.teaser {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.teaser h3 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.teaser .muted {
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
 .card { background: var(--card); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; }
 .card-body h3 { margin-bottom: 0.5rem; }
 
@@ -171,6 +193,3 @@ p {
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
-
-
-
