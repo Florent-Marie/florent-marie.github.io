@@ -30,7 +30,6 @@ p {
 }
 
 .lead {
-  color: var(--muted);
   font-style: italic;
   margin-top: 0.5rem;
 }
@@ -209,6 +208,7 @@ p {
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
