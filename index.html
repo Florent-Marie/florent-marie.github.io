@@ -1,4 +1,3 @@
-<!-- FILE: index.html -->
 <!doctype html>
 <html lang="fr">
 <head>
@@ -25,46 +24,46 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-inner">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-inner">
         <div class="hero-text">
           <h1 class="title"><span class="brand-script">Florent Marié</span></h1>
           <p class="lead">Auteur-compositeur-interprète entre folk, rock et chanson à texte.<br/>
-J’explore les émotions à travers des histoires, entre humour et mélancolie.
-          </p>
+          J’explore les émotions à travers des histoires, entre humour et mélancolie.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="/compositions.html">Écouter mes compositions</a>
+            <a class="btn secondary" href="/taverne.html">Visiter la Taverne de Maitre Frelon</a>
+          </div>
         </div>
         <div class="hero-media">
-          <!-- Replace YOUTUBE_ID_HERE with your presentation video ID -->
           <div class="video-wrap">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_ID_HERE" title="Présentation Florent Marié" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_HERE" title="Présentation Florent Marié" frameborder="0" allowfullscreen loading="lazy"></iframe>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- About -->
     <section class="about container">
+      <h2>Qui suis-je ?</h2>
       <div class="grid-2">
-        <div>
-          <h2>Qui suis-je ?</h2>
-          <p>Depuis tout petit, la musique m’accompagne. Certains enfants s’endorment avec des histoires, moi c’était avec des chansons. J’écoutais aussi bien des cassettes de Henri Dès et Jean René que Johnny Hallyday ou les grands noms du rock’n’roll comme Little Richard.</p>
-          <p>À l’école, je me cherchais encore, sans trop savoir où aller. C’est au lycée que tout a vraiment commencé. J’y ai découvert AC/DC, les Beatles et Francis Cabrel, connu mes premiers amours et mes premières galères sentimentales. C'est surtout à cette époque que j'ai appris à jouer de la guitare pour chanter un peu… Et pour la frime aussi. Je reprenais les Beach Boys, Ray Charles et Cabrel, évidemment. Ça partait dans tous les sens, mais c’est ce que j’aimais dans la musique et dans la vie : l'immensité et la beauté de la diversité.</p>
-          <p>Avec le temps, j’ai eu envie de composer à mon tour. Entre 2016 et 2018, j’ai enregistré mes premières maquettes avec les moyens du bord : le micro de mon téléphone et ma guitare branchée sur mon ordinateur grâce à un câble Jack-USB "Rocksmith". C’est comme ça que j’ai commencé à publier mes créations sur YouTube. Peu à peu, j’ai investi dans du matériel, monté mon petit home studio, appris la basse et à utiliser un clavier midi. Aujourd’hui, j’ai enfin le sentiment d’avoir trouvé mon propre son et de pouvoir créer exactement comme je l’imagine.</p>
-          <p>En 2020, j’ai eu envie de m’amuser autrement avec la musique, en parallèle de mes compositions originales. C’est là qu’est né Maitre Frelon, un barde anachronique qui revisite les classique de la chanson française façon médiévale. Une aventure un peu folle, entre humour, passion et théatre, qui a pris de l’ampleur et qui me fait connaître aujourd’hui auprès d’un public toujours plus curieux et enthousiaste</p>
+        <div class="about-text">
+          <h3>Mon parcours</h3>
+          <p>Depuis tout petit, la musique m’accompagne. Certains enfants s’endorment avec des histoires, moi c’était avec des chansons…</p>
+          <p>Au lycée, j’ai découvert AC/DC, les Beatles et Francis Cabrel, connu mes premiers amours et mes premières galères sentimentales. C'est là que j'ai appris à jouer de la guitare pour chanter un peu… et pour la frime aussi.</p>
+          <p>Entre 2016 et 2018, j’ai enregistré mes premières maquettes avec le micro de mon téléphone et ma guitare branchée sur mon ordinateur. Peu à peu, j’ai investi dans du matériel, monté mon petit home studio et appris la basse et le clavier midi.</p>
+          <p>En 2020 est né Maitre Frelon, un barde anachronique revisitant les classiques de la chanson française façon médiévale. Une aventure entre humour, passion et théâtre qui rencontre aujourd’hui un public curieux et enthousiaste.</p>
         </div>
-        <div class="hero-buttons">
-            <a class="btn" href="/compositions.html">Écouter mes compositions</a>
-            <a class="btn" href="/taverne.html">Visiter la Taverne de Maitre Frelon</a>
-          </div>
-        <div>
+        <div class="about-videos">
           <h3>Dernières vidéos</h3>
           <div class="grid-videos">
-            <!-- Thumbnails / embedded videos: replace IDs -->
             <div class="vid">
-              <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_1" title="Vidéo 1" frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_1" title="Vidéo 1" frameborder="0" allowfullscreen loading="lazy"></iframe>
               <p class="caption">Clip — Titre 1</p>
             </div>
             <div class="vid">
-              <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_2" title="Vidéo 2" frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_2" title="Vidéo 2" frameborder="0" allowfullscreen loading="lazy"></iframe>
               <p class="caption">Clip — Titre 2</p>
             </div>
           </div>
@@ -72,17 +71,17 @@ J’explore les émotions à travers des histoires, entre humour et mélancolie.
       </div>
     </section>
 
+    <!-- Featured project -->
     <section class="featured container">
       <h2>Projet en avant</h2>
       <div class="card">
         <div class="card-body">
           <h3>Lampadaire Club</h3>
           <p>Un album-narration racontant l'histoire d'une fugueuse. Clips, atmosphères, et visuels liés forment un univers cohérent.</p>
-          <a class="btn small" href="/compositions.html">Voir les morceaux</a>
+          <a class="btn small primary" href="/compositions.html">Voir les morceaux</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -91,9 +90,15 @@ J’explore les émotions à travers des histoires, entre humour et mélancolie.
         <p>© <span id="year"></span> Florent Marié — Tous droits réservés.</p>
       </div>
       <div class="socials">
-        <a href="#">YouTube</a>
-        <a href="#">Instagram</a>
-        <a href="#">TikTok</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img src="/images/youtube.svg" alt="YouTube">
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="/images/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img src="/images/tiktok.svg" alt="TikTok">
+        </a>
       </div>
     </div>
   </footer>
@@ -101,6 +106,3 @@ J’explore les émotions à travers des histoires, entre humour et mélancolie.
   <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
