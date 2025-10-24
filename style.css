@@ -113,8 +113,19 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
 }
 
 /* Video grid */
-.grid-videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-.vid iframe { width: 100%; height: 200px; border-radius: 8px; }
+.grid-videos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* permet le passage en colonne sur mobile */
+}
+.vid {
+  flex: 1 1 48%; /* deux vidéos côte à côte, chacune 48% de largeur */
+}
+.vid iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
 
 /* Featured */
 .card { background: var(--card); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; }
@@ -138,6 +149,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
