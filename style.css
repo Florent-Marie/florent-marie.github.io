@@ -141,14 +141,14 @@ p {
 
 /* Video grid */
 .grid-videos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  flex-wrap: wrap; /* permet le passage en colonne sur mobile */
-  justify-content: space-between; /* espace égal entre les vidéos */
 }
+
 .vid {
   position: relative;
-  flex: 1 1 calc(50% - 0.5rem);
+  width: 100%;
   padding-bottom: 56.25%; /* ratio 16:9 */
   border-radius: 8px;
   overflow: hidden;
@@ -163,7 +163,6 @@ p {
   border: 0;
   border-radius: 8px;
 }
-
 
 /* Featured */
 .featured {
@@ -215,4 +214,5 @@ p {
     flex: 1 1 100%;
   }
 }
+
 
