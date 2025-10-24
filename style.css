@@ -34,10 +34,10 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   gap: 2rem;
 }
 .hero-text {
-  flex: 1 1 40%;
+  flex: 1 1 50%;
   max-width: 600px; /* ou plus si besoin */
 }
-.hero-media { flex: 1 1 60%; display: flex; justify-content: center; }
+.hero-media { flex: 1 1 50%; display: flex; justify-content: center; }
 .hero-buttons {
   margin-top: 1.5rem;
   display: flex;
@@ -64,6 +64,8 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   display: flex;              /* pour centrer le texte */
   align-items: center;
   justify-content: center;
+  max-width: 300px;
+  margin: 0 auto; /* centre si le bouton est plus petit que max-width */
 }
 
 /* Video wrap responsive */
@@ -113,6 +115,7 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
 
