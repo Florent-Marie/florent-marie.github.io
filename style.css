@@ -131,6 +131,7 @@ p {
   margin-top: 2rem; /* plus d'espace avant chaque titre */
   margin-bottom: 1rem;
   font-size: 1.4rem;
+  font-style: italic;
 }
 /* About-text prend toute la largeur */
 .about-text, .about-videos {
@@ -179,6 +180,9 @@ p {
   max-width: 700px;
   margin: 0 auto;
 }
+.teaser h2 {
+  margin-bottom: 1rem;
+}
 .teaser h3 {
   font-size: 1.8rem;
   color: var(--accent);
@@ -216,6 +220,7 @@ p {
     flex: 1 1 100%;
   }
 }
+
 
 
 
