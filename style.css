@@ -28,6 +28,12 @@ p {
   margin-bottom: 1rem;
   line-height: 1.7;
 }
+
+.quote {
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
 .container { max-width: var(--max-width); margin: 0 auto; padding: 2rem; }
 
 .site-header {
@@ -193,3 +199,4 @@ p {
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
