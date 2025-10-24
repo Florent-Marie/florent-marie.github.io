@@ -148,7 +148,7 @@ p {
 }
 .vid {
   position: relative;
-  width: calc(50% - 0.5rem);
+  flex: 1 1 calc(50% - 0.5rem);
   padding-bottom: 56.25%; /* ratio 16:9 */
   border-radius: 8px;
   overflow: hidden;
@@ -212,6 +212,7 @@ p {
 /* Mobile : une vidéo par ligne */
 @media (max-width: 600px) {
   .vid {
-    width: 100%;
+    flex: 1 1 100%;
   }
 }
+
