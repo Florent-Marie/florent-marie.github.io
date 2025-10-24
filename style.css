@@ -147,13 +147,23 @@ p {
   flex-wrap: wrap; /* permet le passage en colonne sur mobile */
 }
 .vid {
-  flex: 1 1 48%; /* deux vidéos côte à côte, chacune 48% de largeur */
+  position: relative;
+  flex: 1 1 48%; /* pour que deux vidéos tiennent sur la même ligne */
+  padding-bottom: 56.25%; /* ratio 16:9 */
+  border-radius: 8px;
+  overflow: hidden;
 }
+
 .vid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 200px;
+  height: 100%;
+  border: 0;
   border-radius: 8px;
 }
+
 
 /* Featured */
 .featured {
@@ -199,5 +209,6 @@ p {
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
