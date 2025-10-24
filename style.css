@@ -41,9 +41,9 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
 .hero-buttons {
   margin-top: 1.5rem;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  flex-wrap: wrap; /* les boutons passent en colonne (sinon : nowrap)*/
-  justify-content: center; /* centre les boutons horizontalement */
+  align-items: center;
 }
 .btn { display: inline-block; padding: 0.6rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; }
 .btn.primary { background: var(--accent); color: #0b0b0b; }
@@ -83,5 +83,6 @@ html, body { height: 100%; font-family: 'Montserrat', system-ui, sans-serif; bac
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
+
 
 
