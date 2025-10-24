@@ -144,10 +144,11 @@ p {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap; /* permet le passage en colonne sur mobile */
+  justify-content: space-between; /* espace égal entre les vidéos */
 }
 .vid {
   position: relative;
-  flex: 1 1 48%; /* pour que deux vidéos tiennent sur la même ligne */
+  width: calc(50% - 0.5rem);
   padding-bottom: 56.25%; /* ratio 16:9 */
   border-radius: 8px;
   overflow: hidden;
@@ -208,7 +209,9 @@ p {
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .grid-2 { flex-direction: column; }
 }
-
-
-
-
+/* Mobile : une vidéo par ligne */
+@media (max-width: 600px) {
+  .vid {
+    width: 100%;
+  }
+}
