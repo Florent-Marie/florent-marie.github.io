@@ -1,109 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Compositions - Florent Marié</title>
-<link rel="stylesheet" href="style.css">
-
-<style>
-/* Effet hover sur les cartes */
-.card {
-  background: var(--card);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  position: relative;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-}
-
-/* Images albums et singles */
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-.card:hover img {
-  transform: scale(1.05);
-}
-
-/* Lecteur Spotify intégré */
-.spotify-embed {
-  margin-top: 1rem;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-/* Boutons streaming avec icône */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: center;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.2s;
-}
-.btn img {
-  width: 20px;
-  height: 20px;
-}
-
-/* Grid albums & sorties */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-/* Slider pour petites sorties récentes */
-.slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
-.slider::-webkit-scrollbar {
-  display: none;
-}
-.slider .card {
-  flex: 0 0 250px;
-}
-
-/* Animation apparition */
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.5s forwards;
-}
-.card:nth-child(1){ animation-delay: 0.1s; }
-.card:nth-child(2){ animation-delay: 0.2s; }
-.card:nth-child(3){ animation-delay: 0.3s; }
-.card:nth-child(4){ animation-delay: 0.4s; }
-.card:nth-child(5){ animation-delay: 0.5s; }
-.card:nth-child(6){ animation-delay: 0.6s; }
-
-@keyframes fadeInUp {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive ajustements */
-@media(max-width:900px){
-  .grid-2 { grid-template-columns: 1fr; }
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Florent Marié — Compositions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/favicon.png">
 </head>
 <body>
-
-<!-- Header -->
-<header class="site-header">
+  <!-- Header identique à ton site -->
+  <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/index.html"><span class="brand-script">Florent Marié</span></a>
       <nav class="main-nav" id="main-nav">
@@ -116,142 +23,128 @@
     </div>
   </header>
 
-<!-- Hero -->
-<section class="hero-inner container">
-  <div class="hero-text">
-    <h1 class="title">Mes compositions musicales</h1>
-    <p class="lead">Découvrez mes dernières sorties et albums, disponibles sur Spotify, Deezer, Apple Music et toutes vos plateformes préférées.</p>
-  </div>
-</section>
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <h1 class="title"><span class="brand-script">Mes compositions musicales</span></h1>
+      <p class="lead">Découvrez mes derniers singles et albums, disponibles sur Spotify, Deezer, Apple Music et toutes vos plateformes préférées.</p>
+    </section>
 
-<!-- Sorties récentes -->
-<section class="container">
-  <h2>Sorties récentes</h2>
-  <div class="slider">
-    <!-- Single 1 -->
-    <div class="card">
-      <img src="images/single-1.jpg" alt="Single 1 - Florent Marié">
-      <div class="card-body">
-        <h3>Single 1</h3>
-        <p class="muted">2025</p>
-        <div class="spotify-embed">
-          <iframe src="https://open.spotify.com/embed/track/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <!-- Sorties récentes -->
+    <section class="container">
+      <h2>Sorties récentes</h2>
+      <div class="slider">
+        <!-- Single 1 -->
+        <div class="card">
+          <img src="images/single-1.jpg" alt="Single 1">
+          <div class="card-body">
+            <h3>Single 1</h3>
+            <p class="muted">2025</p>
+            <div class="spotify-embed">
+              <iframe src="https://open.spotify.com/embed/track/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
         </div>
-        <a href="https://open.spotify.com/track/xxxx" target="_blank" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
+        <!-- Single 2 -->
+        <div class="card">
+          <img src="images/single-2.jpg" alt="Single 2">
+          <div class="card-body">
+            <h3>Single 2</h3>
+            <p class="muted">2025</p>
+            <div class="spotify-embed">
+              <iframe src="https://open.spotify.com/embed/track/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- Single 3 -->
+        <div class="card">
+          <img src="images/single-3.jpg" alt="Single 3">
+          <div class="card-body">
+            <h3>Single 3</h3>
+            <p class="muted">2025</p>
+            <div class="spotify-embed">
+              <iframe src="https://open.spotify.com/embed/track/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Albums complets -->
+    <section class="container">
+      <h2>Albums complets</h2>
+      <div class="grid-2">
+        <div class="card">
+          <img src="images/20-20.jpg" alt="20/20">
+          <div class="card-body">
+            <h3>20/20</h3>
+            <p class="muted">2020</p>
+            <div class="spotify-embed">
+              <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/debut-de-la-fin.jpg" alt="Le début de la fin">
+          <div class="card-body">
+            <h3>Le début de la fin</h3>
+            <p class="muted">2021</p>
+            <div class="spotify-embed">
+              <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/fin-du-debut.jpg" alt="La fin du début">
+          <div class="card-body">
+            <h3>La fin du début</h3>
+            <p class="muted">2022</p>
+            <div class="spotify-embed">
+              <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/les-vacances.jpg" alt="Les vacances">
+          <div class="card-body">
+            <h3>Les vacances</h3>
+            <p class="muted">2023</p>
+            <div class="spotify-embed">
+              <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Écoutez tout le catalogue -->
+    <section class="container teaser">
+      <h3>Écoutez tout mon catalogue</h3>
+      <p class="muted">Tous mes albums et singles sont disponibles sur vos plateformes de streaming préférées.</p>
+      <a href="https://linktr.ee/florentmarie" target="_blank" class="btn primary">Accéder au catalogue complet</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© <span id="year"></span> Florent Marié — Tous droits réservés.</p>
+      </div>
+      <div class="socials">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img width="24" height="24" src="/images/youtube.svg" alt="YouTube">
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img width="24" height="24" src="/images/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+          <img width="24" height="24" src="/images/spotify.svg" alt="Spotify">
+        </a>
       </div>
     </div>
+  </footer>
 
-    <!-- Single 2 -->
-    <div class="card">
-      <img src="images/single-2.jpg" alt="Single 2 - Florent Marié">
-      <div class="card-body">
-        <h3>Single 2</h3>
-        <p class="muted">2025</p>
-        <div class="spotify-embed">
-          <iframe src="https://open.spotify.com/embed/track/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <a href="https://open.spotify.com/track/xxxx" target="_blank" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
-      </div>
-    </div>
-
-    <!-- Single 3 -->
-    <div class="card">
-      <img src="images/single-3.jpg" alt="Single 3 - Florent Marié">
-      <div class="card-body">
-        <h3>Single 3</h3>
-        <p class="muted">2025</p>
-        <div class="spotify-embed">
-          <iframe src="https://open.spotify.com/embed/track/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <a href="https://open.spotify.com/track/xxxx" target="_blank" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Albums -->
-<section class="container">
-  <h2>Albums complets</h2>
-  <div class="grid-2">
-    <!-- Album 20/20 -->
-    <div class="card">
-      <img src="images/20-20.jpg" alt="20/20 - Florent Marié">
-      <div class="card-body">
-        <h3>20/20</h3>
-        <p class="muted">2020</p>
-        <p>Premier album complet explorant un univers introspectif et mélodique.</p>
-        <div class="spotify-embed">
-          <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <a href="https://open.spotify.com/album/xxxx" target="_blank" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
-        <a href="https://www.deezer.com/album/xxxx" target="_blank" class="btn secondary"><img src="images/deezer.svg" alt=""> Deezer</a>
-      </div>
-    </div>
-
-    <!-- Album Le début de la fin -->
-    <div class="card">
-      <img src="images/debut-de-la-fin.jpg" alt="Le début de la fin - Florent Marié">
-      <div class="card-body">
-        <h3>Le début de la fin</h3>
-        <p class="muted">2021</p>
-        <p>Première partie du double album, explorant un récit musical en deux volets.</p>
-        <div class="spotify-embed">
-          <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <a href="https://open.spotify.com/album/xxxx" target="_blank" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
-        <a href="https://www.deezer.com/album/xxxx" target="_blank" class="btn secondary"><img src="images/deezer.svg" alt=""> Deezer</a>
-      </div>
-    </div>
-
-    <!-- Album La fin du début -->
-    <div class="card">
-      <img src="images/fin-du-debut.jpg" alt="La fin du début - Florent Marié">
-      <div class="card-body">
-        <h3>La fin du début</h3>
-        <p class="muted">2022</p>
-        <p>Deuxième partie du double album, suite du récit musical.</p>
-        <div class="spotify-embed">
-          <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <a href="https://open.spotify.com/album/xxxx" target="_blank" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
-        <a href="https://www.deezer.com/album/xxxx" target="_blank" class="btn secondary"><img src="images/deezer.svg" alt=""> Deezer</a>
-      </div>
-    </div>
-
-    <!-- Album Les vacances -->
-    <div class="card">
-      <img src="images/les-vacances.jpg" alt="Les vacances - Florent Marié">
-      <div class="card-body">
-        <h3>Les vacances</h3>
-        <p class="muted">2023</p>
-        <p>Album estival et léger, mélange de sons électroniques et acoustiques.</p>
-        <div class="spotify-embed">
-          <iframe src="https://open.spotify.com/embed/album/xxxx" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <a href="https://open.spotify.com/album/xxxx" target="_blank" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
-        <a href="https://www.deezer.com/album/xxxx" target="_blank" class="btn secondary"><img src="images/deezer.svg" alt=""> Deezer</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Écoutez tout -->
-<section class="container teaser">
-  <h3>Écoutez tout mon catalogue</h3>
-  <p class="muted">Tous mes albums, singles et projets sont disponibles sur vos plateformes de streaming préférées.</p>
-  <a href="https://linktr.ee/florentmarie" target="_blank" class="btn primary">Accéder au catalogue complet</a>
-</section>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <p>&copy; 2025 Florent Marié</p>
-  <div class="socials">
-    <a href="https://www.instagram.com/florentmarie" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
-    <a href="https://www.youtube.com/@florentmarie" target="_blank"><img src="images/youtube.svg" alt="YouTube"></a>
-    <a href="https://open.spotify.com/artist/xxxx" target="_blank"><img src="images/spotify.svg" alt="Spotify"></a>
-  </div>
-</footer>
-
+  <script src="scripts.js"></script>
 </body>
 </html>
-
