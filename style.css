@@ -4,9 +4,6 @@
   --muted: #9aa0a6;
   --accent: #c59a3b;
   --max-width: 1100px;
-  --h2-size: inherit;
-  --h2-margin-top: 0;
-  --h2-margin-bottom: 1rem;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,11 +25,7 @@ body {
 }
 
 h2 {
-  font-size: var(--h2-size);
-  margin-top: var(--h2-margin-top);
-  margin-bottom: var(--h2-margin-bottom);
-  font-weight: 600;
-  color: #fff;
+  margin-bottom: 1rem;
 }
 
 
@@ -287,5 +280,3 @@ p {
     flex: 1 1 100%;
   }
 }
-
-
