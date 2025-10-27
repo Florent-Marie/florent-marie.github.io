@@ -133,6 +133,13 @@ p {
   font-size: 1.4rem;
   font-style: italic;
 }
+
+.about-videos h3 {
+  margin-top: 2rem; /* plus d'espace avant chaque titre */
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-style: italic;
+}
 /* About-text prend toute la largeur */
 .about-text, .about-videos {
   width: 100%;     /* force la largeur complète */
@@ -220,6 +227,7 @@ p {
     flex: 1 1 100%;
   }
 }
+
 
 
 
