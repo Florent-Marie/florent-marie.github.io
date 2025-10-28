@@ -39,6 +39,12 @@
   border-radius: 12px;
   overflow: hidden;
 }
+.spotify-embed iframe {
+  transform: scale(0.9); /* Réduction à 90% */
+  transform-origin: top center; /* Garde le centrage propre */
+  width: 111%; /* Compense la réduction pour que tout reste aligné */
+}
+
 
 /* Boutons streaming avec icône */
 .btn {
@@ -243,6 +249,7 @@
 
 </body>
 </html>
+
 
 
 
