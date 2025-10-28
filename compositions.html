@@ -39,6 +39,24 @@
   border-radius: 12px;
   overflow: hidden;
 }
+/* Lecteur YouTube intégré */
+.youtube-embed {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  height: 0;
+}
+
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 
 /* Boutons streaming avec icône */
@@ -137,7 +155,7 @@
       <div class="card-body">
         <h3>Noël Rouge</h3>
         <p class="muted">2024</p>
-        <div class="spotify-embed">
+        <div class="youtube-embed">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/7zgnXu47mrA?si=lPzF4ns_EChGcv8X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <a href="#" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
@@ -149,7 +167,7 @@
       <div class="card-body">
         <h3>You'd Better Start Running</h3>
         <p class="muted">2024</p>
-        <div class="spotify-embed">
+        <div class="youtube-embed">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/XSVdkoc5Eo4?si=GRJTm66VVJ9svu4u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <a href="#" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
@@ -161,7 +179,7 @@
       <div class="card-body">
         <h3>Un autre verre</h3>
         <p class="muted">2024</p>
-        <div class="spotify-embed">
+        <div class="youtube-embed">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/GeXSjlzAqUs?si=LvMJwJOSVylLx42B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <a href="#" class="btn primary"><img src="images/spotify.svg" alt=""> Spotify</a>
@@ -292,19 +310,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
