@@ -17,6 +17,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -98,11 +101,6 @@
 }
 
 /* Animation apparition */
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.5s forwards;
-}
 .card:nth-child(1){ animation-delay: 0.1s; }
 .card:nth-child(2){ animation-delay: 0.2s; }
 .card:nth-child(3){ animation-delay: 0.3s; }
@@ -139,7 +137,7 @@
   <h2>Sorties récentes</h2>
   <div class="slider">
     <div class="card">
-      <img src="images/single-1.jpg" alt="Florent Marié">
+      <img src="images/single-1.jpg" alt="Mange tes morts - Florent Marié">
       <div class="card-body">
         <h3>Mange tes morts</h3>
         <p class="muted">2025</p>
@@ -151,7 +149,7 @@
     </div>
 
     <div class="card">
-      <img src="images/single-2.jpg" alt="Florent Marié">
+      <img src="images/single-2.jpg" alt="Noël Rouge - Florent Marié">
       <div class="card-body">
         <h3>Noël Rouge</h3>
         <p class="muted">2024</p>
@@ -163,7 +161,7 @@
     </div>
     
     <div class="card">
-      <img src="images/single-3.jpg" alt="Florent Marié">
+      <img src="images/single-3.jpg" alt="You'd Better Start Running - Florent Marié">
       <div class="card-body">
         <h3>You'd Better Start Running</h3>
         <p class="muted">2024</p>
@@ -175,7 +173,7 @@
     </div>
     
     <div class="card">
-      <img src="images/single-4.jpg" alt="Florent Marié">
+      <img src="images/single-4.jpg" alt="Un autre verre - Florent Marié">
       <div class="card-body">
         <h3>Un autre verre</h3>
         <p class="muted">2024</p>
@@ -231,7 +229,7 @@
             style="border-radius:12px" 
             src="https://open.spotify.com/embed/album/77BRwegEmlaAPnhp8lnsC7?utm_source=generator&theme=0"
             width="100%" 
-            height="152" 
+            height="352" 
             frameBorder="0" 
             allowfullscreen="" 
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
@@ -255,7 +253,7 @@
             style="border-radius:12px" 
             src="https://open.spotify.com/embed/album/0zbBfVyF8VH534Lg9LKThA?utm_source=generator&theme=0"
             width="100%" 
-            height="152" 
+            height="352" 
             frameBorder="0" 
             allowfullscreen="" 
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
@@ -279,7 +277,7 @@
             style="border-radius:12px" 
             src="https://open.spotify.com/embed/album/1V246xgmCAh516bYKQbyr5?utm_source=generator&theme=0"
             width="100%" 
-            height="152" 
+            height="352" 
             frameBorder="0" 
             allowfullscreen="" 
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
@@ -310,3 +308,4 @@
 
 </body>
 </html>
+
