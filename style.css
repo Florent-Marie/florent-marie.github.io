@@ -228,6 +228,43 @@ p {
 }
 .card-body h3 { margin-bottom: 0.5rem; }
 
+.card-body {
+  display: flex;
+  flex-direction: column; /* boutons empilés verticalement */
+  gap: 0.5rem;           /* espace entre les boutons */
+  margin-top: 1rem;
+  align-items: center; 
+}
+
+.card-body .btn {
+  width: 60%;            /* prend toute la largeur de la carte */
+  text-align: center;     /* texte centré */
+  justify-content: center; 
+  padding: 0.6rem 0;      /* uniformise le padding horizontal */
+  box-sizing: border-box;
+}
+.card-body .youtube-embed {
+  width: 100%;
+}
+
+/* Décalage horizontal selon le type */
+.card-body .btn.primary {
+  margin-left: -10%;
+}
+
+.card-body .btn.secondary {
+  margin-right: -10%;
+}
+
+.card-body .btn.primary:hover {
+  transform: translateX(-5%) scale(1.05); /* léger décalage à gauche + zoom */
+}
+
+.card-body .btn.secondary:hover {
+  transform: translateX(5%) scale(1.05);  /* léger décalage à droite + zoom */
+}
+
+
 /* Footer */
 .site-footer { 
   border-top: 1px solid rgba(255,255,255,0.03); 
