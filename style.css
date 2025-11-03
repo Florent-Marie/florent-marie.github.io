@@ -317,3 +317,120 @@ p {
     flex: 1 1 100%;
   }
 }
+/* CONTACT PAGE */
+.contact-main {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page-intro {
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
+.page-intro h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.page-intro p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Grid des deux blocs */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Cartes */
+.contact-card {
+  background: rgba(20, 20, 22, 0.85);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+}
+
+.contact-card h3 {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Formulaire */
+form label {
+  display: block;
+  text-align: left;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  transition: background 0.2s, border 0.2s;
+}
+form input:focus,
+form textarea:focus {
+  outline: 1px solid var(--accent);
+  background: rgba(255,255,255,0.1);
+}
+form button {
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #0b0b0b;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(197, 154, 59, 0.4);
+}
+
+/* Réseaux */
+.contact-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.contact-list li {
+  margin: 0.4rem 0;
+  color: #e9e9e9;
+  font-size: 1rem;
+}
+.contact-card a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+
