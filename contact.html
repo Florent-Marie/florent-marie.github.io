@@ -26,35 +26,42 @@
   </header>
 
   <main class="container contact-main">
-    <section class="page-intro">
-      <h1>Contact</h1>
-      <p>Pour booking, collaborations ou presse — envoie un message via le formulaire ou contacte-moi sur les réseaux.</p>
-    </section>
+  <section class="page-intro">
+    <h1>Contact</h1>
+    <p>Pour toute demande de booking, de collaboration ou de presse — utilise le formulaire ci-dessous ou contacte-moi directement sur mes réseaux.</p>
+  </section>
 
-    <section class="contact-grid">
-      <div class="contact-card">
-        <h3>Envoyer un message</h3>
-        <!-- Simple form via Formspree (no backend required). Replace ACTION with your Formspree endpoint or your mailto. -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <label>Nom<br><input type="text" name="name" required></label>
-          <label>Email<br><input type="email" name="email" required></label>
-          <label>Message<br><textarea name="message" rows="6" required></textarea></label>
-          <button class="btn" type="submit">Envoyer</button>
-        </form>
-      </div>
+  <section class="contact-grid">
+    <div class="contact-card">
+      <h3>Envoyer un message</h3>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Nom
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
 
-      <div class="contact-card">
-        <h3>Réseaux</h3>
-        <ul class="contact-list">
-          <li>YouTube — Florent Marié</li>
-          <li>Instagram — @maitre.frelon</li>
-          <li>TikTok — @maitre.frelon</li>
-        </ul>
-        <h4>Booking / press</h4>
-        <p><a href="mailto:bizudu38fatality@gmail.com">bizudu38fatality@gmail.com</a></p>
-      </div>
-    </section>
-  </main>
+    <div class="contact-card">
+      <h3>Réseaux</h3>
+      <ul class="contact-list">
+        <li>🎬 YouTube — <strong>Florent Marié</strong></li>
+        <li>📸 Instagram — <strong>@maitre.frelon</strong></li>
+        <li>🎭 TikTok — <strong>@maitre.frelon</strong></li>
+      </ul>
+
+      <h4>📧 Booking / Presse</h4>
+      <p><a href="mailto:bizudu38fatality@gmail.com">bizudu38fatality@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+
 
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -67,6 +74,7 @@
   <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
 
