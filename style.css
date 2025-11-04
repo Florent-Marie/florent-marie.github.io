@@ -434,16 +434,16 @@ form button:hover {
 }
 
 /* Liens globaux */
-.nav-link {
+.credit {
   color: var(--accent);       /* couleur principale des liens */
   text-decoration: none;
 }
-.nav-link:hover {
+.credit:hover {
   color: #f5e1b8;             /* couleur au survol */
 }
-.nav-link:visited {
+.credit:visited {
   color: var(--accent);       /* liens visités */
 }
-.nav-link:active {
+.credit:active {
   color: #d4a15f;             /* clic */
 }
