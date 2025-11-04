@@ -208,8 +208,10 @@ html, body {
 
 .images-grid img {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: auto;           /* laisse la hauteur s'adapter au ratio */
+  max-height: 250px;      /* limite la hauteur si tu veux */
+  object-fit: contain;    /* l'image entière est visible */
+  background-color: rgba(20,20,22,0.6); /* couleur de fond pour les espaces vides */
   display: block;
   border-bottom: 1px solid var(--accent);
 }
@@ -262,6 +264,7 @@ html, body {
     display: flex;
   }
 }
+
 
 
 
