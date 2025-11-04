@@ -433,4 +433,17 @@ form button:hover {
   text-decoration: underline;
 }
 
-
+/* Liens globaux */
+.nav-link {
+  color: var(--accent);       /* couleur principale des liens */
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #f5e1b8;             /* couleur au survol */
+}
+.nav-link:visited {
+  color: var(--accent);       /* liens visités */
+}
+.nav-link:active {
+  color: #d4a15f;             /* clic */
+}
