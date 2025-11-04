@@ -191,18 +191,16 @@ html, body {
 }
 
 .images-grid figure {
-  background-color: rgba(20, 20, 22, 0.6); /* fond uni pour les zones vides */
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;       /* carré fixe pour l'image */
+  background-color: rgba(20, 20, 22, 0.6); /* fond uni derrière l'image */
   border: 2px solid var(--accent);
   border-radius: 12px;
   overflow: hidden;
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 1 / 1; /* carré fixe */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;             /* pas de flex pour que figcaption reste en dessous */
 }
 
 .images-grid figure:hover {
@@ -213,20 +211,22 @@ html, body {
 .images-grid img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* image entière visible */
+  object-fit: contain;        /* l'image entière est visible */
   display: block;
-  border: none; /* plus besoin de border-bottom, le cadre est déjà défini */
+  border: none;
 }
 
+/* figcaption reste en dessous, hors du carré */
 .images-grid figcaption {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background-color: rgba(0,0,0,0.6);
+  border-top: 1px solid var(--accent);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   color: var(--muted);
   font-size: 0.9rem;
-  line-height: 1.4;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.8); /* fond semi-transparent pour lisibilité */
-  border-top: 1px solid var(--accent);   /* optionnel : petite séparation avec l'image */
-  border-bottom-left-radius: 10px;       /* arrondi si tu veux */
-  border-bottom-right-radius: 10px;
+  text-align: center;
 }
 
 
@@ -266,6 +266,7 @@ html, body {
     display: flex;
   }
 }
+
 
 
 
