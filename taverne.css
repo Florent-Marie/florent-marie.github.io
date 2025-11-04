@@ -193,30 +193,24 @@ html, body {
 .images-grid figure {
   width: 100%;
   max-width: 300px;
-  aspect-ratio: 1 / 1;       /* carré fixe pour l'image */
-  background-color: rgba(20, 20, 22, 0.6); /* fond uni derrière l'image */
+  height: 200px;               /* Hauteur fixe pour toutes les images */
+  background-color: rgba(20, 20, 22, 0.6); /* Fond derrière les images */
   border: 2px solid var(--accent);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: block;             /* pas de flex pour que figcaption reste en dessous */
-}
-
-.images-grid figure:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px var(--accent);
+  display: block;              /* figcaption reste en dessous */
 }
 
 .images-grid img {
   width: 100%;
   height: 100%;
-  object-fit: contain;        /* l'image entière est visible */
+  object-fit: contain;         /* Image entière visible, fond derrière si nécessaire */
   display: block;
   border: none;
 }
 
-/* figcaption reste en dessous, hors du carré */
 .images-grid figcaption {
   margin-top: 0.5rem;
   padding: 0.3rem 0.5rem;
@@ -227,6 +221,12 @@ html, body {
   color: var(--muted);
   font-size: 0.9rem;
   text-align: center;
+}
+
+
+.images-grid figure:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px var(--accent);
 }
 
 
@@ -266,6 +266,7 @@ html, body {
     display: flex;
   }
 }
+
 
 
 
