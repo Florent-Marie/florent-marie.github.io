@@ -27,6 +27,27 @@ html, body {
   color: #f5f0e6;
 }
 
+/* --- Liens globaux --- */
+a {
+  color: var(--accent);       /* couleur principale des liens */
+  text-decoration: none;       /* supprime le soulignement par défaut */
+  transition: color 0.2s;      /* transition douce pour le hover */
+}
+
+a:hover {
+  color: #f5e1b8;             /* couleur plus claire au survol */
+  text-decoration: underline;  /* optionnel : garde un effet au hover */
+}
+
+a:visited {
+  color: var(--accent);       /* même couleur que normal pour les liens visités */
+}
+
+a:active {
+  color: #d4a15f;             /* couleur lors du clic */
+}
+
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -262,6 +283,7 @@ html, body {
     display: flex;
   }
 }
+
 
 
 
