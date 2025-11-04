@@ -219,6 +219,10 @@ html, body {
   font-size: 0.9rem;
   line-height: 1.4;
   padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6); /* fond semi-transparent pour lisibilité */
+  border-top: 1px solid var(--accent);   /* optionnel : petite séparation avec l'image */
+  border-bottom-left-radius: 10px;       /* arrondi si tu veux */
+  border-bottom-right-radius: 10px;
 }
 
 
@@ -258,5 +262,6 @@ html, body {
     display: flex;
   }
 }
+
 
 
