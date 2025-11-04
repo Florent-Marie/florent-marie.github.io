@@ -193,23 +193,21 @@ html, body {
 .images-grid figure {
   width: 100%;
   max-width: 300px;
-  height: 200px;               /* Hauteur fixe pour toutes les images */
-  background-color: rgba(20, 20, 22, 0.6); /* Fond derrière les images */
+  background-color: rgba(20, 20, 22, 0.6);
   border: 2px solid var(--accent);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: block;              /* figcaption reste en dessous */
 }
 
 .images-grid img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;         /* Image entière visible, fond derrière si nécessaire */
+  height: 200px; /* déplace la contrainte ici */
+  object-fit: contain;
   display: block;
-  border: none;
 }
+
 
 .images-grid figcaption {
   margin-top: 0.5rem;
@@ -266,13 +264,3 @@ html, body {
     display: flex;
   }
 }
-
-
-
-
-
-
-
-
-
-
