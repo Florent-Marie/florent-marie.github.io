@@ -191,13 +191,17 @@ html, body {
 }
 
 .images-grid figure {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(20, 20, 22, 0.6); /* fond uni pour les zones vides */
   border: 2px solid var(--accent);
   border-radius: 12px;
   overflow: hidden;
+  width: 100%;
   max-width: 300px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  aspect-ratio: 1 / 1; /* carré fixe */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -208,12 +212,10 @@ html, body {
 
 .images-grid img {
   width: 100%;
-  height: auto;           /* laisse la hauteur s'adapter au ratio */
-  max-height: 250px;      /* limite la hauteur si tu veux */
-  object-fit: contain;    /* l'image entière est visible */
-  background-color: rgba(20,20,22,0.6); /* couleur de fond pour les espaces vides */
+  height: 100%;
+  object-fit: contain; /* image entière visible */
   display: block;
-  border-bottom: 1px solid var(--accent);
+  border: none; /* plus besoin de border-bottom, le cadre est déjà défini */
 }
 
 .images-grid figcaption {
@@ -221,7 +223,7 @@ html, body {
   font-size: 0.9rem;
   line-height: 1.4;
   padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.6); /* fond semi-transparent pour lisibilité */
+  background-color: rgba(0, 0, 0, 0.8); /* fond semi-transparent pour lisibilité */
   border-top: 1px solid var(--accent);   /* optionnel : petite séparation avec l'image */
   border-bottom-left-radius: 10px;       /* arrondi si tu veux */
   border-bottom-right-radius: 10px;
@@ -264,6 +266,7 @@ html, body {
     display: flex;
   }
 }
+
 
 
 
