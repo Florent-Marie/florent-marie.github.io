@@ -23,15 +23,29 @@ html {
 body {
   font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   color: #f5f0e6; /* Garde la couleur du texte de taverne.css */
+  
   background:
-    linear-gradient(to bottom right, rgba(94,94,94,0.6), rgba(26,26,26,0.6)), /* Gradient ajouté pour l'effet de transparence */
-    url('images/wood-texture.jpg'), /* Garde l'image texture bois */
-    var(--bg); /* Garde la couleur de fond définie par la variable */
+    /* Gradient ajouté pour l'effet de transparence */
+    linear-gradient(to bottom right, rgba(94,94,94,0.6), rgba(26,26,26,0.6)),
+    
+    /* Tenter de charger l'image AVIF si elle est supportée */
+    url('images/wood-texture.avif') no-repeat center/cover,
+    
+    /* Si AVIF n'est pas supporté, utiliser WebP */
+    url('images/wood-texture.webp') no-repeat center/cover,
+    
+    /* Si ni AVIF ni WebP ne sont supportés, utiliser JPG comme fallback */
+    url('images/wood-texture.jpg') no-repeat center/cover,
+    
+    /* La couleur de fond définie par la variable */
+    var(--bg);
+
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 
 
 .container {
@@ -270,4 +284,5 @@ body {
     display: flex;
   }
 }
+
 
