@@ -27,12 +27,17 @@
   box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 
-/* Images albums */
+/* Images dans les cartes de la section Concerts IRL */
 .card img {
   width: 100%;
+  aspect-ratio: 1 / 1;      /* Force un format carré */
+  object-fit: cover;        /* Coupe l’image si nécessaire */
+  object-position: center;  /* Centre le cadrage */
   border-radius: 8px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
+/* Effet hover conservé */
 .card:hover img {
   transform: scale(1.05);
   opacity: 0.8;
@@ -147,15 +152,15 @@
     <div class="grid-2">
       <div class="card">
         <div class="card-body">
-          <h3> Daisy (Grignon, 73)</h3>
+          <h3>Conccert à Grignon)</h3>
           <p class="muted">2025</p>
-          <img src="/images/2023-06-audition-chant-140.jpg"/>
+          <img src="/images/FB_IMG_1762352581212.jpg"/>
         </div>
       </div>
       
       <div class="card">
         <div class="card-body">
-          <h3>Michel Musique (Grenoble, 38)</h3>
+          <h3>Jam à Michel Musique</h3>
           <p class="muted">2023</p>
           <img src="/images/2023-06-audition-chant-140.jpg"/>
         </div>
@@ -163,7 +168,7 @@
       
       <div class="card">
         <div class="card-body">
-          <h3>Daisy (Grenoble, 38)</h3>
+          <h3>Concert au Daisy</h3>
           <p class="muted">2023</p>
           <img src="/images/333450673_917777492696362_750738304602494724_n.jpg"/>
         </div>
@@ -217,4 +222,5 @@
 
 
 </html>
+
 
