@@ -448,34 +448,51 @@ form button:hover {
   color: #d4a15f;             /* clic */
 }
 
-/* --- Lightbox universelle pour les images --- */
+/* --- Lightbox animée & responsive --- */
 .lightbox-overlay {
   display: none;
   position: fixed;
-  z-index: 9999;
   inset: 0;
+  z-index: 9999;
   background: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   cursor: zoom-out;
-}
-
-.lightbox-overlay img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
-  transition: transform 0.2s ease;
+  backdrop-filter: blur(4px);
+  transition: background 0.25s ease;
 }
 
 .lightbox-overlay.show {
   display: flex;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { background: rgba(0, 0, 0, 0); }
+  to   { background: rgba(0, 0, 0, 0.85); }
+}
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  transform-origin: center center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.lightbox-overlay.show img {
+  opacity: 1;
+  transform: scale(1);
 }
 
 img.zoomable {
   cursor: zoom-in;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
 }
+
 img.zoomable:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
