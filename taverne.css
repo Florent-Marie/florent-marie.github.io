@@ -16,16 +16,23 @@
   padding: 0;
 }
 
-html, body {
+html {
   height: 100%;
-  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background-color: var(--bg);
-  background-image: url('images/wood-texture.jpg'); /* optionnel : texture bois */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #f5f0e6;
 }
+
+body {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #f5f0e6; /* Garde la couleur du texte de taverne.css */
+  background:
+    linear-gradient(to bottom right, rgba(94,94,94,0.6), rgba(26,26,26,0.6)), /* Gradient ajouté pour l'effet de transparence */
+    url('images/wood-texture.jpg'), /* Garde l'image texture bois */
+    var(--bg); /* Garde la couleur de fond définie par la variable */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .container {
   max-width: var(--max-width);
@@ -263,3 +270,4 @@ html, body {
     display: flex;
   }
 }
+
