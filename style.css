@@ -447,3 +447,35 @@ form button:hover {
 .credit:active {
   color: #d4a15f;             /* clic */
 }
+
+/* --- Lightbox universelle pour les images --- */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.lightbox-overlay.show {
+  display: flex;
+}
+
+img.zoomable {
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+img.zoomable:hover {
+  transform: scale(1.02);
+}
