@@ -426,7 +426,7 @@ form button:hover {
   font-size: 1rem;
 }
 .contact-card a {
-  color: var(--accent);
+  color: white;
   text-decoration: none;
 }
 .contact-card a:hover {
@@ -496,5 +496,6 @@ img.zoomable {
 img.zoomable:hover {
   transform: scale(1.03);
 }
+
 
 
