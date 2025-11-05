@@ -417,6 +417,7 @@ form button:hover {
 
 /* Réseaux */
 .contact-list {
+  text-align: left; 
   list-style: none;
   margin-bottom: 1.5rem;
 }
@@ -496,3 +497,4 @@ img.zoomable {
 img.zoomable:hover {
   transform: scale(1.03);
 }
+
