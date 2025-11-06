@@ -66,21 +66,13 @@ p {
   font-weight: 600; 
   font-size: 1.6rem; 
 }
-.brand-script {
-  position: relative;
+.brand-script { 
   font-family: 'Pacifico', cursive;
   font-size: inherit;
-  color: #FFD700;
-}
-
-.brand-script::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  z-index: -1;
-  color: #B8860B; /* ombre dorée foncée */
-  filter: blur(1px);
+  background: linear-gradient(45deg, #FFD700, #FFC300, #FFFACD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .main-nav { 
@@ -509,6 +501,7 @@ img.zoomable {
 img.zoomable:hover {
   transform: scale(1.03);
 }
+
 
 
 
