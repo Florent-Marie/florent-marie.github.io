@@ -1,4 +1,4 @@
-t <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -111,7 +111,42 @@ t <!DOCTYPE html>
 .slider .card {
   flex: 0 0 350px;
 }
+.tav-gallery {
+  margin-top: 3rem;
+}
 
+.tav-gallery h2 {
+  font-family: 'MedievalSharp', cursive;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.grid-videos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vid {
+  background-color: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.vid iframe {
+  width: 100%;
+  height: 170px;
+  border: 0;
+  border-radius: 6px;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
 /* Animation apparition */
 .card:nth-child(1){ animation-delay: 0.1s; }
 .card:nth-child(2){ animation-delay: 0.2s; }
@@ -228,15 +263,15 @@ t <!DOCTYPE html>
     </div>
   </section>
   <section class="tav-gallery">
-      <h2>Maitre Frelon</h2>
-      <p>Maitre Frelon aussi se produit sur scène et en festival !</p>
-      <div class="grid-videos">
-        <div class="vid">
-          <iframe src="https://www.youtube.com/embed/SSCUYVePA1A" title="Elle a les yeux arquebuse" frameborder="0" allowfullscreen></iframe>
-          <p class="caption">Festival Yggdrasil Fort Fort Lointain 2025</p>
-        </div>
+    <h2>Maitre Frelon</h2>
+    <p>Maitre Frelon aussi se produit sur scène et en festival !</p>
+    <div class="grid-videos">
+      <div class="vid">
+        <iframe src="https://www.youtube.com/embed/SSCUYVePA1A" title="Elle a les yeux arquebuse" frameborder="0" allowfullscreen></iframe>
+        <p class="caption">Festival Yggdrasil Fort Fort Lointain 2025</p>
       </div>
-    </section>
+    </div>
+  </section>
   <section class="container teaser">
     <h3>Écoutez tout mon catalogue</h3>
     <p class="muted">Tous mes albums, singles et projets sont disponibles sur vos plateformes de streaming préférées.</p>
@@ -258,6 +293,7 @@ t <!DOCTYPE html>
   <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
 
