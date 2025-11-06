@@ -66,17 +66,23 @@ p {
   font-weight: 600; 
   font-size: 1.6rem; 
 }
-.brand-script { 
+.brand-script {
+  position: relative;
   font-family: 'Pacifico', cursive;
   font-size: inherit;
-  background: linear-gradient(45deg, #FFD700, #FFC300, #FFFACD);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow:
-    1px 1px 1px rgba(0,0,0,0.3),
-    2px 2px 1px rgba(0,0,0,0.2),
-    3px 3px 1px rgba(0,0,0,0.1);
+  color: #FFD700;
 }
+
+.brand-script::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: -1;
+  color: #B8860B; /* ombre dorée foncée */
+  filter: blur(1px);
+}
+
 .main-nav { 
   display: flex; 
   gap: 1rem; 
@@ -503,6 +509,7 @@ img.zoomable {
 img.zoomable:hover {
   transform: scale(1.03);
 }
+
 
 
 
