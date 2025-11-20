@@ -496,3 +496,18 @@ img.zoomable {
 img.zoomable:hover {
   transform: scale(1.03);
 }
+@media (max-width: 900px) {
+  .hero-text {
+    order: 1;
+    width: 100%;
+  }
+  .hero-media {
+    order: 2;
+    width: 100%;
+  }
+  .video-wrap {
+    width: 100%;
+    max-width: 700px;
+    margin: 1rem auto;
+  }
+}
