@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let lastThumbRect = null;
 
-  document.querySelectorAll('img').forEach(img => {
+  document.querySelectorAll('img:not(.no-popup)').forEach(img => {
     if (img.width > 80 && !img.closest('header') && !img.closest('footer')) {
       img.classList.add('zoomable');
       img.addEventListener('click', e => {
