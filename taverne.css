@@ -283,8 +283,20 @@ body {
     display: flex;
   }
 }
-
-
-
-
-
+/* Supprimer le cadre autour de l'image maitre-frelon.png */
+.tav-art img {
+  border: none !important;
+  box-shadow: none !important;
+}
+/* Mettre l'image à gauche et le texte à droite */
+.tav-hero-inner {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media (max-width: 900px) {
+  .tav-hero-inner {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
