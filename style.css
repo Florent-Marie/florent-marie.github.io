@@ -16,7 +16,16 @@ body {
   height: 100%;
   background:
     linear-gradient(to bottom right, rgba(94,94,94,0.6), rgba(26,26,26,0.6)),
-    url('/images/fond.jpg'),
+    
+    /* Tenter de charger l'image AVIF si elle est supportée */
+    url('images/fond.avif') no-repeat center/cover,
+    
+    /* Si AVIF n'est pas supporté, utiliser WebP */
+    url('images/fond.webp') no-repeat center/cover,
+    
+    /* Si ni AVIF ni WebP ne sont supportés, utiliser JPG comme fallback */
+    url('images/fond.jpg') no-repeat center/cover,
+
     var(--bg);
   background-attachment: fixed;
   background-repeat: no-repeat;
