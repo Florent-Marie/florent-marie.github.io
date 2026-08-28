@@ -620,3 +620,46 @@ img.zoomable:hover {
     width:100%;
     border-radius:12px;
 }
+
+/* Responsive produit CD */
+@media (max-width: 700px) {
+
+    .product-card {
+        padding: 1.2rem;
+    }
+
+    .product-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .product-image,
+    .product-info {
+        width: 100%;
+    }
+
+    .album-cover {
+        width: min(300px, 80vw);
+        margin: 10px auto 0;
+    }
+
+    .product-info {
+        text-align: center;
+    }
+
+    .product-info ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .product-info .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
