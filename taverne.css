@@ -300,3 +300,90 @@ body {
     text-align: center;
   }
 }
+
+/* =========================================================
+   ALBUM — THÈME TAVERNE
+   ========================================================= */
+
+.product-card {
+  background: rgba(75, 56, 40, 0.85);
+  color: #f5f0e6;
+}
+
+.product-card h1,
+.product-card h2,
+.product-card h3 {
+  font-family: 'MedievalSharp', cursive;
+  color: var(--accent);
+}
+
+.product-card p,
+.product-card li {
+  color: #f5f0e6;
+}
+
+.product-card .muted {
+  color: var(--muted);
+}
+
+.product-card .price {
+  color: var(--accent);
+}
+
+/* Bouton de commande */
+.product-card .btn.primary {
+  background: var(--accent);
+  color: #2b2117;
+}
+
+/* On conserve exactement la mise en page de product-layout */
+.product-card .product-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.product-card .product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.product-card .product-info {
+  flex: 1;
+}
+
+.tav-album {
+  padding: 0;
+  margin: 0;
+}
+
+.tav-album .product-card {
+  background: rgba(75, 56, 40, 0.85);
+  color: #f5f0e6;
+}
+
+.tav-album .product-card h1,
+.tav-album .product-card h2,
+.tav-album .product-card h3 {
+  font-family: 'MedievalSharp', cursive;
+  color: var(--accent);
+}
+
+.tav-album .product-card p,
+.tav-album .product-card li {
+  color: #f5f0e6;
+}
+
+.tav-album .product-card .muted {
+  color: var(--muted);
+}
+
+.tav-album .product-card .price {
+  color: var(--accent);
+}
+
+.tav-album .product-card .btn.primary {
+  background: var(--accent);
+  color: #2b2117;
+}
